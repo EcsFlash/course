@@ -1,7 +1,3 @@
 s = input()
-i = 0
-while i < len(s):
-    if s[i] == '@':
-        s = s.replace('@', '')
-    i += 1
+s = s[:s.find("h")] + s[s.rfind("h") + 1:]
 print(s)
